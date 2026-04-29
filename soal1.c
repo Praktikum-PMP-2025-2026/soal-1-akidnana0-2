@@ -28,14 +28,14 @@ int Compare(const void *a, const void *b) {
     }
 
     if (Artefak1->Tahun != Artefak2->Tahun) {
-        return Artefak2->Tahun - Artefak1->Tahun;
+        return Artefak1->Tahun - Artefak2->Tahun;
     }
     
     if (Artefak1->Nilai != Artefak2->Nilai) {
         return Artefak1->Nilai - Artefak2->Nilai;
     }
     
-    return strcmp(Artefak1->Nama, Artefak2->Nama);
+    return strcmp(Artefak2->Nama, Artefak1->Nama);
 }
 
 int main(){
